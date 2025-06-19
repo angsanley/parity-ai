@@ -1,6 +1,7 @@
 ﻿using ParityAI.Core.Interfaces;
 using ParityAI.Infrastructure;
 using ParityAI.Infrastructure.Email;
+using ParityAI.Infrastructure.OpenAI;
 
 namespace ParityAI.Web.Configurations;
 
@@ -10,6 +11,8 @@ public static class ServiceConfigs
   {
     services.AddInfrastructureServices(builder.Configuration, logger)
             .AddMediatrConfigs();
+
+    services.AddScoped<IOpenAIService, OpenAIService>();
 
 
     if (builder.Environment.IsDevelopment())
