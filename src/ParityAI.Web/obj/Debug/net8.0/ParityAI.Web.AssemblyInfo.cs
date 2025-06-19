@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParityAI.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+268963eb6517b6bb81ad02e2518d78ecc5968c44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7c2507b44a39e90c4c0f348aff88364a422ed0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParityAI.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParityAI.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
