@@ -3,7 +3,6 @@ using FastEndpoints;
 using FastEndpoints.Swagger;
 using Serilog;
 using Serilog.Extensions.Logging;
-using ParityAI.Web.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +32,7 @@ var app = builder.Build();
 
 await app.UseAppMiddleware();
 
-app.MapHub<ParityReasoningHub>("/hub/reasoning");
+// app.MapHub<ParityReasoningHub>("/hub/reasoning");
 
 app.Run();
 

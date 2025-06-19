@@ -16,7 +16,7 @@ public class OpenAIParityAgent : IOpenAIAgent
     private Dictionary<string, (IParityTool, ChatTool)>? _tools;
     private ILogger<OpenAIParityAgent> _logger;
 
-    private readonly string _systemPrompt = "";
+    // private readonly string _systemPrompt = "";
 
     public OpenAIParityAgent(
         IServiceProvider serviceProvider,
