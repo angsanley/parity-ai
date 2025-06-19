@@ -9,7 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ParityAI.Infrastructure.OpenAI;
+using ParityAI.Infrastructure.OpenAI.Agents.ParityAgent.Tools;
+using ParityAI.Infrastructure.OpenAI.Agents.ParityAgent;
 
 namespace ParityAI.Infrastructure;
 public static class InfrastructureServiceExtensions
@@ -30,8 +31,7 @@ public static class InfrastructureServiceExtensions
            .AddScoped<IDeleteContributorService, DeleteContributorService>()
            .AddScoped<IParityTool, ModuloParityTool>()
            .AddScoped<IParityTool, BitwiseParityTool>()
-           .AddScoped<IParityTool, MLParityTool>()
-           .AddScoped<IOpenAIService, OpenAIService>();
+           .AddScoped<IOpenAIAgent, OpenAIParityAgent>();
 
 
     logger.LogInformation("{Project} services registered", "Infrastructure");

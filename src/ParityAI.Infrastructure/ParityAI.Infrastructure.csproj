@@ -16,6 +16,7 @@
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
     <PackageReference Include="OpenAI" />
     <PackageReference Include="SQLite" />
+    <PackageReference Include="System.Text.Json" />
   </ItemGroup>
   
   <ItemGroup>

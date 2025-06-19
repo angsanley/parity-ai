@@ -1,6 +1,6 @@
 using ParityAI.Core.Interfaces;
 
-namespace ParityAI.Core.Services;
+namespace ParityAI.Infrastructure.OpenAI.Agents.ParityAgent.Tools;
 
 public class BitwiseParityTool : IParityTool
 {

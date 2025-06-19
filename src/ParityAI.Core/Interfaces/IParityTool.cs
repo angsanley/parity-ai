@@ -3,6 +3,7 @@ namespace ParityAI.Core.Interfaces;
 public interface IParityTool
 {
     string Name { get; }
+    string Description { get; }
     ParityResult CheckParity(int number);
 }
 

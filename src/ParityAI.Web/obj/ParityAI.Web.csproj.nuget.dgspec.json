@@ -120,6 +120,7 @@
             "SQLite": "3.13.0",
             "Swashbuckle.AspNetCore": "6.5.0",
             "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.Text.Json": "9.0.6",
             "xunit": "2.9.2",
             "xunit.runner.visualstudio": "2.8.2"
           },
@@ -262,6 +263,11 @@
               "target": "Package",
               "version": "[3.13.0, )",
               "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[9.0.6, )",
+              "versionCentrallyManaged": true
             }
           },
           "centralPackageVersions": {
@@ -302,6 +308,7 @@
             "SQLite": "3.13.0",
             "Swashbuckle.AspNetCore": "6.5.0",
             "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.Text.Json": "9.0.6",
             "xunit": "2.9.2",
             "xunit.runner.visualstudio": "2.8.2"
           },
@@ -420,6 +427,7 @@
             "SQLite": "3.13.0",
             "Swashbuckle.AspNetCore": "6.5.0",
             "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.Text.Json": "9.0.6",
             "xunit": "2.9.2",
             "xunit.runner.visualstudio": "2.8.2"
           },
@@ -571,6 +579,7 @@
             "SQLite": "3.13.0",
             "Swashbuckle.AspNetCore": "6.5.0",
             "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.Text.Json": "9.0.6",
             "xunit": "2.9.2",
             "xunit.runner.visualstudio": "2.8.2"
           },

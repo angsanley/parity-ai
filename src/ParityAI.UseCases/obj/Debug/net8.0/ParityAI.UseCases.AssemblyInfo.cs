@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParityAI.UseCases")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7c2507b44a39e90c4c0f348aff88364a422ed0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e4cf78fa9b44960f621696a1bef45773a885a49")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParityAI.UseCases")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParityAI.UseCases")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
