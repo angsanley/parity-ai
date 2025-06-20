@@ -1,10 +1,6 @@
-using System.ClientModel;
 using System.Text.Json;
-using System.Text.Json.Nodes;
-using System.Text.Json.Schema;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using OpenAI;
 using OpenAI.Chat;
 using ParityAI.Core.Interfaces;
 
@@ -133,12 +129,11 @@ public class OpenAIParityAgent : IOpenAIAgent
                 tool =>
                 {
                     JsonSerializerOptions options = JsonSerializerOptions.Default;
-                    JsonNode schema = options.GetJsonSchemaAsNode(typeof(IParityTool));
 
                     var chatTool = ChatTool.CreateFunctionTool(
                         functionName: tool.Name,
                         functionDescription: tool.Description,
-                        functionParameters: BinaryData.FromString(schema.ToString())
+                        functionParameters: BinaryData.FromBytes(tool.ParametersSchema)
                     );
                     return (tool, chatTool);
                 }
