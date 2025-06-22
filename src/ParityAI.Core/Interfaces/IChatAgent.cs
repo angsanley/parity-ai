@@ -2,5 +2,5 @@ namespace ParityAI.Core.Interfaces;
 
 public interface IChatAgent
 {
-    Task<string> GetResponseAsync(string prompt, string model, int maxTokens, CancellationToken cancellationToken);
+    IAsyncEnumerable<string> CompleteChatStreamingAsync(List<string> messages, string model, int maxTokens, CancellationToken cancellationToken);
 }

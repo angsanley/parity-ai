@@ -1,5 +1,4 @@
 ﻿using Ardalis.SharedKernel;
-using ParityAI.Core.ContributorAggregate;
 using ParityAI.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,8 +35,8 @@ public abstract class BaseEfRepoTestFixture
     return builder.Options;
   }
 
-  protected EfRepository<Contributor> GetRepository()
-  {
-    return new EfRepository<Contributor>(_dbContext);
-  }
+  // protected EfRepository<Contributor> GetRepository()
+  // {
+  //   return new EfRepository<Contributor>(_dbContext);
+  // }
 }

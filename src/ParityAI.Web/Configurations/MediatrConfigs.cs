@@ -1,8 +1,7 @@
 ﻿using Ardalis.SharedKernel;
-using ParityAI.Core.ContributorAggregate;
-using ParityAI.UseCases.Contributors.Create;
 using MediatR;
 using System.Reflection;
+using ParityAI.UseCases.Chats.SendMessages;
 
 namespace ParityAI.Web.Configurations;
 
@@ -12,8 +11,8 @@ public static class MediatrConfigs
   {
     var mediatRAssemblies = new[]
       {
-        Assembly.GetAssembly(typeof(Contributor)), // Core
-        Assembly.GetAssembly(typeof(CreateContributorCommand)) // UseCases
+        // Assembly.GetAssembly(typeof(Contributor)), // Core
+        Assembly.GetAssembly(typeof(SendMessagesQuery)) // UseCases
       };
 
     services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(mediatRAssemblies!))
