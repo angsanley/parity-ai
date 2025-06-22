@@ -4,7 +4,7 @@ using ParityAI.Core.Interfaces;
 namespace ParityAI.UseCases.ParityCheck;
 
 public class ParityCheckHandler(
-  IOpenAIAgent openAIAgent
+  IChatAgent openAIAgent
 ) : IQueryHandler<ParityCheckQuery, ParityCheckResponse>
 {
   public async Task<ParityCheckResponse> Handle(ParityCheckQuery request, CancellationToken cancellationToken)

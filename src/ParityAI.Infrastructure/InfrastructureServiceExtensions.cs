@@ -31,7 +31,7 @@ public static class InfrastructureServiceExtensions
            .AddScoped<IDeleteContributorService, DeleteContributorService>()
            .AddScoped<IParityTool, ModuloParityTool>()
            .AddScoped<IParityTool, BitwiseParityTool>()
-           .AddScoped<IOpenAIAgent, OpenAIParityAgent>();
+           .AddScoped<IChatAgent, OpenAIParityAgent>();
 
 
     logger.LogInformation("{Project} services registered", "Infrastructure");
